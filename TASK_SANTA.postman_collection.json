@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "e7af506f-d18f-46b2-9ed5-a369c2d07196",
+		"name": "TASK_SANTA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28399502"
+	},
+	"item": [
+		{
+			"name": "sending cvs file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/TASK/employees.csv"
+						},
+						{
+							"key": "previousAssignmentsPath",
+							"type": "file",
+							"src": "/D:/TASK/previous_assignments.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/assign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"assign"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
